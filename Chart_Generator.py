@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 #import langchain_helper
 st.title("Restaurant Name Generator")
 
@@ -9,7 +10,7 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain.chains import SequentialChain
 
-llm = OpenAI(temperature=0.7, openai_api_key='sk-RHQpKdtpNaUUMq9LSOxi3nONwyrS1QIJxDtXtnbOo0T3BlbkFJt4fejrgzGfSgARm2Xb0BMNtXTERhTGqUv1WVBme3YA')
+llm = OpenAI(temperature=0.7, openai_api_key=os.getenv('OPENAI_API_KEY')
 
 def generate_restaurant_name_and_item(cuisine):
     # Chain 1

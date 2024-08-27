@@ -9,7 +9,7 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain.chains import SequentialChain
 
-llm = OpenAI(temperature=0.7, openai_api_key='sk-K4O4V6vVvmgp9g2Ia0p55LVRY0m3WGNaKDRBUoKDt7T3BlbkFJADl5vDJ3i2EFrex0SfH35wtDYqnSFxFLSZumO7q00A')
+llm = OpenAI(temperature=0.7, openai_api_key='sk-RHQpKdtpNaUUMq9LSOxi3nONwyrS1QIJxDtXtnbOo0T3BlbkFJt4fejrgzGfSgARm2Xb0BMNtXTERhTGqUv1WVBme3YA')
 
 def generate_restaurant_name_and_item(cuisine):
     # Chain 1
